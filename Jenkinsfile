@@ -35,7 +35,7 @@ pipeline {
         }
          stage('Ansible Deploy') {
             steps {
-                sh "ansible-playbook main.yml --user jenkins -K"
+                sh "ansible-playbook main.yml -u machine"
             }
         }
     }
