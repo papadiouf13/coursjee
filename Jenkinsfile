@@ -33,10 +33,16 @@ pipeline {
                echo 'Deploying....'
             }
         }
-         stage('Ansible Deploy') {
+        stage('docker-build-image') {
             steps {
-                sh "ansible-playbook main.yml -u machine"
+                sh 'docker build -t mamadou173diouf/jenkins .'
             }
         }
+        stage('docker-push-image') {
+            steps {
+                sh 'docker push mamadou173diouf/jenkins'
+    }
+}
+        
     }
 }
