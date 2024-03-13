@@ -5,7 +5,7 @@ pipeline {
         jdk 'jdk'
         docker 'docker'
     }
-    triggers{
+    triggers {
         githubPush()
     }
     stages {
@@ -29,9 +29,9 @@ pipeline {
                 sh 'mvn package'
             }
         }
-         stage('Deploy') {
+        stage('Deploy') {
             steps {
-               echo 'Deploying....'
+                echo 'Deploying....'
             }
         }
         stage('docker-build-image') {
@@ -42,8 +42,7 @@ pipeline {
         stage('docker-push-image') {
             steps {
                 sh 'docker push mamadou173diouf/jenkins'
-    }
-}
-        
+            }
+        }
     }
 }
