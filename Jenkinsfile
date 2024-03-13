@@ -3,7 +3,7 @@ pipeline {
     tools {
         maven 'Maven'
         jdk 'jdk'
-        docker 'docker'
+        dockerTool 'docker' 
     }
     triggers {
         githubPush()
