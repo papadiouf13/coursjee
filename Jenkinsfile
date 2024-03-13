@@ -4,6 +4,9 @@ pipeline {
         maven 'Maven'
         jdk 'jdk'
     }
+    triggers{
+        githubPush()
+    }
     stages {
         stage('Clean') {
             steps {
@@ -23,6 +26,16 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'mvn package'
+            }
+        }
+         stage('Deploy') {
+            steps {
+               echo 'Deploying....'
+            }
+        }
+         stage('Ansible Deploy') {
+            steps {
+                sh "ansible-playbook main.yml --user jenkins -K"
             }
         }
     }
