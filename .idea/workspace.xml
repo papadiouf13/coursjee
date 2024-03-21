@@ -6,7 +6,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d7bab1b-3bfc-4f1d-945c-39fda4de11d3" name="Default Changelist" comment="" />
+    <list default="true" id="1d7bab1b-3bfc-4f1d-945c-39fda4de11d3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,13 @@
         <option value="Jsp File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="C:\Program Files\Git\bin" />
+    <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -35,6 +44,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2dHWSgLgh2n90WJ96HbqQ2bdOKs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -42,7 +52,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -151,11 +161,43 @@
       <updated>1709665485863</updated>
       <workItem from="1709665491174" duration="6222000" />
       <workItem from="1709983271765" duration="1156000" />
-      <workItem from="1710012385636" duration="11533000" />
+      <workItem from="1710012385636" duration="24070000" />
+      <workItem from="1710358552927" duration="605000" />
+      <workItem from="1710539321039" duration="925000" />
+      <workItem from="1710782595147" duration="18031000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/ClasseServlet.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/ClasseServlet.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

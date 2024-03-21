@@ -77,7 +77,7 @@ public class DBHelper {
             myPreparedQuery(sql);
             if (parameters != null) {
                 for(int i = 0; i < parameters.length; i++) {
-                    pstmt.setObject((i+1), parameters[0]);
+                    pstmt.setObject((i+1), parameters[i]);
                 }
             }
             return pstmt.executeUpdate();

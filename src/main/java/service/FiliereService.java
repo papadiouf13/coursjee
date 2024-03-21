@@ -2,9 +2,12 @@ package service;
 
 
 import helper.DBHelper;
+import model.Filiere;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FiliereService {
 
@@ -20,6 +23,22 @@ public class FiliereService {
             }
             rs.close();
             return false;
+        } catch (SQLException e) {
+            throw e;
+        }
+    }
+
+    public List<Filiere>  allFiliere() throws SQLException {
+        try {
+            DBHelper db =  DBHelper.getInstance();
+            String sql = "select * from filiere";
+            ResultSet rs = db.executeSelect(sql, null);
+            List<Filiere> filieres = new ArrayList<>();
+            while (rs.next()){
+                filieres.add(new Filiere(rs.getInt("id"), rs.getString("libelle")));
+            }
+            rs.close();
+            return filieres;
         } catch (SQLException e) {
             throw e;
         }
